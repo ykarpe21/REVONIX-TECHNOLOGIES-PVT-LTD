@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact — Revonix Technologies</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <img src="assets/logo-placeholder.svg" alt="Revonix logo" class="logo" />
+        <span class="brand-name">Revonix Technologies</span>
+      </div>
+      <nav class="nav">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="products.html" class="nav-link">Products</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="technology.html" class="nav-link">Technology</a>
+        <a href="contact.html" class="nav-link active cta">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="page contact-page">
+      <h1>Contact Us</h1>
+      <p>For enquiries, quotes or partnerships please contact us.</p>
+
+      <form id="contactForm" class="contact-form" action="mailto:hello@revonix.example?subject=Contact%20from%20Website" method="post" enctype="text/plain">
+        <label>
+          Name
+          <input type="text" name="name" id="name" required />
+        </label>
+        <label>
+          Email
+          <input type="email" name="email" id="email" required />
+        </label>
+        <label>
+          Message
+          <textarea name="message" id="message" rows="6" required></textarea>
+        </label>
+        <div class="form-actions">
+          <button type="submit" class="btn">Send</button>
+          <a href="mailto:hello@revonix.example" class="btn btn-outline">Email us</a>
+        </div>
+      </form>
+
+      <div class="contact-info">
+        <p><strong>Address:</strong> Pune, Maharashtra, India</p>
+        <p><strong>Email:</strong> hello@revonix.example</p>
+        <p><strong>Phone:</strong> +91 99999 99999</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer container footer-inner">
+    <div>© <span id="year6"></span> Revonix Technologies Pvt Ltd</div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>document.getElementById('year6').textContent = new Date().getFullYear();</script>
+</body>
+</html>
